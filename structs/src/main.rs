@@ -41,6 +41,24 @@ fn main() {
     };
 
     rect_area(rect);
+
+    let my_status = Status::Rich;
+    let _my_status_two = Status::Poor;
+
+    match my_status {
+        Status::Rich => println!("You're rich"),
+        Status::Poor => println!("You're poor"),
+    }
+}
+
+enum Status {
+    Rich,
+    Poor
+}
+
+enum Work {
+    Civilian,
+    Soldier
 }
 
 fn rect_area(rect: Rectangle) -> i32 {
